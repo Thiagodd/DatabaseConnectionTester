@@ -27,13 +27,13 @@ public class ApiExceptionHandler {
   }
 
   @ExceptionHandler(HttpMessageNotReadableException.class)
-  public ResponseEntity<?> httpMessageNotReadableException(HttpMessageNotReadableException e) {
+  public ResponseEntity<?> httpMessageNotReadableException() {
     ErrorResponse errorResponse = getErrorResponse("Corpo da requisição é obrigatório. Nenhum dado foi passado.");
     return ResponseEntity.badRequest().body(errorResponse);
   }
 
   @ExceptionHandler(SQLPermissionDeniedException.class)
-  public ResponseEntity<?> httpMessageNotReadableException() {
+  public ResponseEntity<?> SQLPermissionDeniedException() {
     ErrorResponse errorResponse = getErrorResponse("O usuário fornecido não possui permissão para se conectar ao banco.");
     return ResponseEntity.badRequest().body(errorResponse);
   }
