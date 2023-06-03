@@ -1,6 +1,6 @@
 package com.thiagodd.databaseconnectiontester.api.controllers;
 
-import com.thiagodd.databaseconnectiontester.model.DatabaseCredential;
+import com.thiagodd.databaseconnectiontester.model.domain.DatabaseCredential;
 import com.thiagodd.databaseconnectiontester.util.DatabaseUtil;
 import jakarta.validation.Valid;
 import org.springframework.http.ResponseEntity;

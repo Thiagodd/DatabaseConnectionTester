@@ -1,13 +1,12 @@
 package com.thiagodd.databaseconnectiontester.util;
 
-import com.thiagodd.databaseconnectiontester.model.DatabaseCredential;
+import com.thiagodd.databaseconnectiontester.model.domain.DatabaseCredential;
 import com.thiagodd.databaseconnectiontester.model.exceptions.SQLPermissionDeniedException;
 import org.springframework.stereotype.Component;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
-import java.sql.Statement;
 
 @Component
 public class DatabaseUtil {
@@ -38,12 +37,5 @@ public class DatabaseUtil {
 
   static Connection createConnection(DatabaseCredential credential) throws SQLException {
     return DriverManager.getConnection(credential.getUrl(), credential.getUsername(), credential.getPassword());
-  }
-
-  private static boolean isConnectionValid(Connection connection) throws SQLException {
-    try (Statement statement = connection.createStatement()) {
-      statement.execute("SELECT 1");
-      return true;
-    }
   }
 }

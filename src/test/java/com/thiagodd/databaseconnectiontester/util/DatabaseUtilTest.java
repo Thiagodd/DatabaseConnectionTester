@@ -1,6 +1,6 @@
 package com.thiagodd.databaseconnectiontester.util;
 
-import com.thiagodd.databaseconnectiontester.model.DatabaseCredential;
+import com.thiagodd.databaseconnectiontester.model.domain.DatabaseCredential;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertFalse;
