@@ -24,11 +24,11 @@ Content-Type: application/json
 ### Respostas possíveis:
 
 Status 200 OK: A conexão com o banco de dados foi realizada com sucesso.
-```http request
+```plaintext
 A conexão com o banco de dados foi realizada com sucesso.
 ```
 
 Status 400 Bad Request: A conexão com o banco de dados falhou. Verifique os dados e tente novamente..
-```http request
+```plaintext
 A conexão com o banco de dados falhou. Verifique os dados e tente novamente.
 ```
