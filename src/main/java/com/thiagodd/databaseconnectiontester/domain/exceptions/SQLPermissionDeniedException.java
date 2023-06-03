@@ -1,4 +1,4 @@
-package com.thiagodd.databaseconnectiontester.model.exceptions;
+package com.thiagodd.databaseconnectiontester.domain.exceptions;
 
 public class SQLPermissionDeniedException extends RuntimeException {
 

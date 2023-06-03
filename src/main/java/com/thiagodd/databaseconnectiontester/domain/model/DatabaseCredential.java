@@ -1,4 +1,4 @@
-package com.thiagodd.databaseconnectiontester.model.domain;
+package com.thiagodd.databaseconnectiontester.domain.model;
 
 
 import jakarta.validation.constraints.NotNull;

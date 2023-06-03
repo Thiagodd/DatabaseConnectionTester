@@ -1,6 +1,6 @@
 package com.thiagodd.databaseconnectiontester.api.exceptionHandler;
 
-import com.thiagodd.databaseconnectiontester.model.exceptions.SQLPermissionDeniedException;
+import com.thiagodd.databaseconnectiontester.domain.exceptions.SQLPermissionDeniedException;
 import org.springframework.http.ResponseEntity;
 import org.springframework.http.converter.HttpMessageNotReadableException;
 import org.springframework.web.bind.MethodArgumentNotValidException;
@@ -21,7 +21,7 @@ public class ApiExceptionHandler {
   }
 
   @ExceptionHandler(MethodArgumentNotValidException.class)
-  public ResponseEntity<?> methodArgumentNotValidException(MethodArgumentNotValidException e) {
+  public ResponseEntity<?> methodArgumentNotValidException() {
     ErrorResponse errorResponse = getErrorResponse("Um ou mais campos estão nulos. Verifique os valores dos campos e tente novamente.");
     return ResponseEntity.badRequest().body(errorResponse);
   }

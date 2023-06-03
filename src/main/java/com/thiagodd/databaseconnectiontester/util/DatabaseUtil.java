@@ -1,7 +1,7 @@
 package com.thiagodd.databaseconnectiontester.util;
 
-import com.thiagodd.databaseconnectiontester.model.domain.DatabaseCredential;
-import com.thiagodd.databaseconnectiontester.model.exceptions.SQLPermissionDeniedException;
+import com.thiagodd.databaseconnectiontester.domain.model.DatabaseCredential;
+import com.thiagodd.databaseconnectiontester.domain.exceptions.SQLPermissionDeniedException;
 import org.springframework.stereotype.Component;
 
 import java.sql.Connection;
